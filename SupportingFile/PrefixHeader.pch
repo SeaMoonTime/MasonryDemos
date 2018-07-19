@@ -1,0 +1,17 @@
+//
+//  PrefixHeader.pch
+//  MasonryDemos
+//
+//  Created by Yang on 16/07/2018.
+//  Copyright © 2018 SeaMoonTime. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//define this constant if you want to use Masonry without the 'mas_' prefix
+#define MAS_SHORTHAND
+
+#import <Masonry.h>
+
+#endif /* PrefixHeader_pch */
