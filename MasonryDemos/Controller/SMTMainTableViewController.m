@@ -9,6 +9,7 @@
 #import "SMTMainTableViewController.h"
 #import "SMTExampleViewController.h"
 #import "SMTBasicView.h"
+#import "SMTRemakeView.h"
 
 
 static NSString * const kMainCellIdentifier = @"kMainCellIdentifier";
@@ -28,7 +29,8 @@ static NSString * const kMainCellIdentifier = @"kMainCellIdentifier";
     }
     self.title = @"Examples";
     
-    self.exampleControllers = @[[[SMTExampleViewController alloc]initWithTitle:@"Basic" viewClass:[SMTBasicView class]]
+    self.exampleControllers = @[[[SMTExampleViewController alloc]initWithTitle:@"Basic" viewClass:[SMTBasicView class]],
+                                 [[SMTExampleViewController alloc]initWithTitle:@"Remake" viewClass:[SMTRemakeView class]]
     ];
 
     return self;
