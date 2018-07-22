@@ -17,6 +17,7 @@
 		2F0CD2512100435100112117 /* SMTExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0CD2502100435100112117 /* SMTExampleViewController.m */; };
 		2F0CD2542100625400112117 /* SMTBasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0CD2532100625400112117 /* SMTBasicView.m */; };
 		2F4613652101C8DD00BCE08F /* SMTRemakeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4613642101C8DD00BCE08F /* SMTRemakeView.m */; };
+		39229665210410A7008E866F /* SMTConstantsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39229664210410A7008E866F /* SMTConstantsView.m */; };
 		CA9A5A9D7C3DEA58718E3C51 /* libPods-MasonryDemos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B087507A631B8692FDFC87F3 /* libPods-MasonryDemos.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,8 @@
 		2F0CD2532100625400112117 /* SMTBasicView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMTBasicView.m; sourceTree = "<group>"; };
 		2F4613632101C8DD00BCE08F /* SMTRemakeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMTRemakeView.h; sourceTree = "<group>"; };
 		2F4613642101C8DD00BCE08F /* SMTRemakeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMTRemakeView.m; sourceTree = "<group>"; };
+		39229663210410A7008E866F /* SMTConstantsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMTConstantsView.h; sourceTree = "<group>"; };
+		39229664210410A7008E866F /* SMTConstantsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMTConstantsView.m; sourceTree = "<group>"; };
 		B087507A631B8692FDFC87F3 /* libPods-MasonryDemos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MasonryDemos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F703AD102D99C7E67C13A040 /* Pods-MasonryDemos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonryDemos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MasonryDemos/Pods-MasonryDemos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +123,8 @@
 				2F0CD2532100625400112117 /* SMTBasicView.m */,
 				2F4613632101C8DD00BCE08F /* SMTRemakeView.h */,
 				2F4613642101C8DD00BCE08F /* SMTRemakeView.m */,
+				39229663210410A7008E866F /* SMTConstantsView.h */,
+				39229664210410A7008E866F /* SMTConstantsView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -152,6 +157,8 @@
 				2F0C593C20FC7DFE0024197A /* Sources */,
 				2F0C593D20FC7DFE0024197A /* Frameworks */,
 				2F0C593E20FC7DFE0024197A /* Resources */,
+				EEFB5089984E251F67FFB66C /* [CP] Embed Pods Frameworks */,
+				ED6C6905005FB81B0D25BCFD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,6 +234,36 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		ED6C6905005FB81B0D25BCFD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MasonryDemos/Pods-MasonryDemos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEFB5089984E251F67FFB66C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MasonryDemos/Pods-MasonryDemos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -235,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F0CD2542100625400112117 /* SMTBasicView.m in Sources */,
+				39229665210410A7008E866F /* SMTConstantsView.m in Sources */,
 				2F0CD24E2100419400112117 /* SMTMainTableViewController.m in Sources */,
 				2F0C594820FC7DFF0024197A /* ViewController.m in Sources */,
 				2F0CD2512100435100112117 /* SMTExampleViewController.m in Sources */,
