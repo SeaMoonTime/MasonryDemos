@@ -11,6 +11,7 @@
 #import "SMTBasicView.h"
 #import "SMTRemakeView.h"
 #import "SMTConstantsView.h"
+#import "SMTSidesView.h"
 
 
 static NSString * const kMainCellIdentifier = @"kMainCellIdentifier";
@@ -32,7 +33,8 @@ static NSString * const kMainCellIdentifier = @"kMainCellIdentifier";
     
     self.exampleControllers = @[[[SMTExampleViewController alloc]initWithTitle:@"Basic" viewClass:[SMTBasicView class]],
                                  [[SMTExampleViewController alloc]initWithTitle:@"Remake" viewClass:[SMTRemakeView class]],
-                                [[SMTExampleViewController alloc]initWithTitle:@"Using Constants" viewClass:[SMTConstantsView class]]
+                                [[SMTExampleViewController alloc]initWithTitle:@"Using Constants" viewClass:[SMTConstantsView class]],
+                                 [[SMTExampleViewController alloc]initWithTitle:@"Composite Edges" viewClass:[SMTSidesView class]]
     ];
 
     return self;

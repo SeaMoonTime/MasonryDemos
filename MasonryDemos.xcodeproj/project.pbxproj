@@ -18,6 +18,7 @@
 		2F0CD2542100625400112117 /* SMTBasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0CD2532100625400112117 /* SMTBasicView.m */; };
 		2F4613652101C8DD00BCE08F /* SMTRemakeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4613642101C8DD00BCE08F /* SMTRemakeView.m */; };
 		39229665210410A7008E866F /* SMTConstantsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39229664210410A7008E866F /* SMTConstantsView.m */; };
+		3922966821041D55008E866F /* SMTSidesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3922966721041D55008E866F /* SMTSidesView.m */; };
 		CA9A5A9D7C3DEA58718E3C51 /* libPods-MasonryDemos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B087507A631B8692FDFC87F3 /* libPods-MasonryDemos.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,8 @@
 		2F4613642101C8DD00BCE08F /* SMTRemakeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMTRemakeView.m; sourceTree = "<group>"; };
 		39229663210410A7008E866F /* SMTConstantsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMTConstantsView.h; sourceTree = "<group>"; };
 		39229664210410A7008E866F /* SMTConstantsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMTConstantsView.m; sourceTree = "<group>"; };
+		3922966621041D55008E866F /* SMTSidesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMTSidesView.h; sourceTree = "<group>"; };
+		3922966721041D55008E866F /* SMTSidesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMTSidesView.m; sourceTree = "<group>"; };
 		B087507A631B8692FDFC87F3 /* libPods-MasonryDemos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MasonryDemos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F703AD102D99C7E67C13A040 /* Pods-MasonryDemos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonryDemos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MasonryDemos/Pods-MasonryDemos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +128,8 @@
 				2F4613642101C8DD00BCE08F /* SMTRemakeView.m */,
 				39229663210410A7008E866F /* SMTConstantsView.h */,
 				39229664210410A7008E866F /* SMTConstantsView.m */,
+				3922966621041D55008E866F /* SMTSidesView.h */,
+				3922966721041D55008E866F /* SMTSidesView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3922966821041D55008E866F /* SMTSidesView.m in Sources */,
 				2F0CD2542100625400112117 /* SMTBasicView.m in Sources */,
 				39229665210410A7008E866F /* SMTConstantsView.m in Sources */,
 				2F0CD24E2100419400112117 /* SMTMainTableViewController.m in Sources */,
