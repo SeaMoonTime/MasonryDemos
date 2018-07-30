@@ -13,6 +13,7 @@
 #import "SMTConstantsView.h"
 #import "SMTSidesView.h"
 #import "SMTAspectFitView.h"
+#import "SMTScrollView.h"
 
 
 static NSString * const kMainCellIdentifier = @"kMainCellIdentifier";
@@ -36,7 +37,8 @@ static NSString * const kMainCellIdentifier = @"kMainCellIdentifier";
                                  [[SMTExampleViewController alloc]initWithTitle:@"Remake" viewClass:[SMTRemakeView class]],
                                 [[SMTExampleViewController alloc]initWithTitle:@"Using Constants" viewClass:[SMTConstantsView class]],
                                  [[SMTExampleViewController alloc]initWithTitle:@"Composite Edges" viewClass:[SMTSidesView class]],
-                                [[SMTExampleViewController alloc]initWithTitle:@"Aspect Fit" viewClass:[SMTAspectFitView class]]
+                                [[SMTExampleViewController alloc]initWithTitle:@"Aspect Fit" viewClass:[SMTAspectFitView class]],
+                                [[SMTExampleViewController alloc]initWithTitle:@"ScrollView" viewClass:[SMTScrollView class]]
     ];
 
     return self;

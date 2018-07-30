@@ -16,6 +16,7 @@
 		2F0CD24E2100419400112117 /* SMTMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0CD24D2100419400112117 /* SMTMainTableViewController.m */; };
 		2F0CD2512100435100112117 /* SMTExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0CD2502100435100112117 /* SMTExampleViewController.m */; };
 		2F0CD2542100625400112117 /* SMTBasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0CD2532100625400112117 /* SMTBasicView.m */; };
+		2F10DCF3210EBFBF000D52DD /* SMTScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F10DCF2210EBFBF000D52DD /* SMTScrollView.m */; };
 		2F4613652101C8DD00BCE08F /* SMTRemakeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4613642101C8DD00BCE08F /* SMTRemakeView.m */; };
 		39229665210410A7008E866F /* SMTConstantsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39229664210410A7008E866F /* SMTConstantsView.m */; };
 		3922966821041D55008E866F /* SMTSidesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3922966721041D55008E866F /* SMTSidesView.m */; };
@@ -42,6 +43,8 @@
 		2F0CD2502100435100112117 /* SMTExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMTExampleViewController.m; sourceTree = "<group>"; };
 		2F0CD2522100625400112117 /* SMTBasicView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMTBasicView.h; sourceTree = "<group>"; };
 		2F0CD2532100625400112117 /* SMTBasicView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMTBasicView.m; sourceTree = "<group>"; };
+		2F10DCF1210EBFBF000D52DD /* SMTScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMTScrollView.h; sourceTree = "<group>"; };
+		2F10DCF2210EBFBF000D52DD /* SMTScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMTScrollView.m; sourceTree = "<group>"; };
 		2F4613632101C8DD00BCE08F /* SMTRemakeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMTRemakeView.h; sourceTree = "<group>"; };
 		2F4613642101C8DD00BCE08F /* SMTRemakeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMTRemakeView.m; sourceTree = "<group>"; };
 		39229663210410A7008E866F /* SMTConstantsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMTConstantsView.h; sourceTree = "<group>"; };
@@ -135,6 +138,8 @@
 				3922966721041D55008E866F /* SMTSidesView.m */,
 				392296692104A0EF008E866F /* SMTAspectFitView.h */,
 				3922966A2104A0EF008E866F /* SMTAspectFitView.m */,
+				2F10DCF1210EBFBF000D52DD /* SMTScrollView.h */,
+				2F10DCF2210EBFBF000D52DD /* SMTScrollView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,8 +172,6 @@
 				2F0C593C20FC7DFE0024197A /* Sources */,
 				2F0C593D20FC7DFE0024197A /* Frameworks */,
 				2F0C593E20FC7DFE0024197A /* Resources */,
-				EEFB5089984E251F67FFB66C /* [CP] Embed Pods Frameworks */,
-				ED6C6905005FB81B0D25BCFD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,36 +247,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ED6C6905005FB81B0D25BCFD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MasonryDemos/Pods-MasonryDemos-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EEFB5089984E251F67FFB66C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MasonryDemos/Pods-MasonryDemos-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -281,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F10DCF3210EBFBF000D52DD /* SMTScrollView.m in Sources */,
 				3922966821041D55008E866F /* SMTSidesView.m in Sources */,
 				2F0CD2542100625400112117 /* SMTBasicView.m in Sources */,
 				39229665210410A7008E866F /* SMTConstantsView.m in Sources */,
