@@ -14,6 +14,8 @@
 #import "SMTSidesView.h"
 #import "SMTAspectFitView.h"
 #import "SMTScrollView.h"
+#import "SMTDistributeView.h"
+#import "SMTVerticalDistributeView.h"
 
 
 static NSString * const kMainCellIdentifier = @"kMainCellIdentifier";
@@ -38,7 +40,9 @@ static NSString * const kMainCellIdentifier = @"kMainCellIdentifier";
                                 [[SMTExampleViewController alloc]initWithTitle:@"Using Constants" viewClass:[SMTConstantsView class]],
                                  [[SMTExampleViewController alloc]initWithTitle:@"Composite Edges" viewClass:[SMTSidesView class]],
                                 [[SMTExampleViewController alloc]initWithTitle:@"Aspect Fit" viewClass:[SMTAspectFitView class]],
-                                [[SMTExampleViewController alloc]initWithTitle:@"ScrollView" viewClass:[SMTScrollView class]]
+                                [[SMTExampleViewController alloc]initWithTitle:@"ScrollView" viewClass:[SMTScrollView class]],
+                                [[SMTExampleViewController alloc]initWithTitle:@"Horizontal Distribute View" viewClass:[SMTDistributeView class]],
+                                [[SMTExampleViewController alloc]initWithTitle:@"Horizontal Distribute View" viewClass:[SMTVerticalDistributeView class]]
     ];
 
     return self;

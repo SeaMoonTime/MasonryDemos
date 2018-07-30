@@ -17,6 +17,8 @@
 		2F0CD2512100435100112117 /* SMTExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0CD2502100435100112117 /* SMTExampleViewController.m */; };
 		2F0CD2542100625400112117 /* SMTBasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0CD2532100625400112117 /* SMTBasicView.m */; };
 		2F10DCF3210EBFBF000D52DD /* SMTScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F10DCF2210EBFBF000D52DD /* SMTScrollView.m */; };
+		2F10DCF6210EE392000D52DD /* SMTDistributeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F10DCF5210EE392000D52DD /* SMTDistributeView.m */; };
+		2F10DCF9210EE85B000D52DD /* SMTVerticalDistributeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F10DCF8210EE85B000D52DD /* SMTVerticalDistributeView.m */; };
 		2F4613652101C8DD00BCE08F /* SMTRemakeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4613642101C8DD00BCE08F /* SMTRemakeView.m */; };
 		39229665210410A7008E866F /* SMTConstantsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39229664210410A7008E866F /* SMTConstantsView.m */; };
 		3922966821041D55008E866F /* SMTSidesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3922966721041D55008E866F /* SMTSidesView.m */; };
@@ -45,6 +47,10 @@
 		2F0CD2532100625400112117 /* SMTBasicView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMTBasicView.m; sourceTree = "<group>"; };
 		2F10DCF1210EBFBF000D52DD /* SMTScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMTScrollView.h; sourceTree = "<group>"; };
 		2F10DCF2210EBFBF000D52DD /* SMTScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMTScrollView.m; sourceTree = "<group>"; };
+		2F10DCF4210EE392000D52DD /* SMTDistributeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMTDistributeView.h; sourceTree = "<group>"; };
+		2F10DCF5210EE392000D52DD /* SMTDistributeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMTDistributeView.m; sourceTree = "<group>"; };
+		2F10DCF7210EE85B000D52DD /* SMTVerticalDistributeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMTVerticalDistributeView.h; sourceTree = "<group>"; };
+		2F10DCF8210EE85B000D52DD /* SMTVerticalDistributeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMTVerticalDistributeView.m; sourceTree = "<group>"; };
 		2F4613632101C8DD00BCE08F /* SMTRemakeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMTRemakeView.h; sourceTree = "<group>"; };
 		2F4613642101C8DD00BCE08F /* SMTRemakeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMTRemakeView.m; sourceTree = "<group>"; };
 		39229663210410A7008E866F /* SMTConstantsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMTConstantsView.h; sourceTree = "<group>"; };
@@ -140,6 +146,10 @@
 				3922966A2104A0EF008E866F /* SMTAspectFitView.m */,
 				2F10DCF1210EBFBF000D52DD /* SMTScrollView.h */,
 				2F10DCF2210EBFBF000D52DD /* SMTScrollView.m */,
+				2F10DCF4210EE392000D52DD /* SMTDistributeView.h */,
+				2F10DCF5210EE392000D52DD /* SMTDistributeView.m */,
+				2F10DCF7210EE85B000D52DD /* SMTVerticalDistributeView.h */,
+				2F10DCF8210EE85B000D52DD /* SMTVerticalDistributeView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -254,10 +264,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F10DCF6210EE392000D52DD /* SMTDistributeView.m in Sources */,
 				2F10DCF3210EBFBF000D52DD /* SMTScrollView.m in Sources */,
 				3922966821041D55008E866F /* SMTSidesView.m in Sources */,
 				2F0CD2542100625400112117 /* SMTBasicView.m in Sources */,
 				39229665210410A7008E866F /* SMTConstantsView.m in Sources */,
+				2F10DCF9210EE85B000D52DD /* SMTVerticalDistributeView.m in Sources */,
 				2F0CD24E2100419400112117 /* SMTMainTableViewController.m in Sources */,
 				2F0C594820FC7DFF0024197A /* ViewController.m in Sources */,
 				2F0CD2512100435100112117 /* SMTExampleViewController.m in Sources */,
